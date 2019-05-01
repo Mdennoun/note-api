@@ -22,7 +22,7 @@
 				<tr>
 						<td>{{ note._id }}</td>
 						<td>{{ note.content }}</td>
-						<td>{{ note.createdAt }}</td>
+						<td>{{ (1348586870/1000)|date('d/m/Y')  }}</td>
 					</tr>
 				{% endfor %}
 			</table>
