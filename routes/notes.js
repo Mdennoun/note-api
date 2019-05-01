@@ -46,11 +46,7 @@ router.put('/', async function(req, res) {
             lastUpdatedAt: lastUpdatedAt
         });
         res.send('Note added');
-/*
-      //DELETING ONE DOCUMENT
-        console.log('Deleting One element');
-        col.deleteMany({content: 'test'});
-*/
+
     } catch (err) {
         res.send(err);
     }
@@ -80,11 +76,7 @@ router.patch('/:id', async function(req, res) {
         else {
             res.status(404).send('Cet identifiant est inconnu');
         }
-/*
-      //DELETING ONE DOCUMENT
-        console.log('Deleting One element');
-        col.deleteMany({content: 'test'});
-*/
+
     } catch (err) {
         res.send(err);
     }
